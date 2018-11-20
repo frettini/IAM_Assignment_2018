@@ -1,0 +1,36 @@
+#N canvas 0 50 1241 603 10;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array sample1 683551 float 2;
+#X coords 0 1 683551 -1 200 140 1;
+#X restore 35 27 graph;
+#X obj 455 32 loadbang;
+#X obj 451 128 soundfiler;
+#X floatatom 451 174 10 0 0 0 - - -;
+#X obj 427 34 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 255 110 tabplay~ sample1;
+#X obj 255 90 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 454 87 read -resize lampmix(2).wav sample1;
+#X obj 256 195 dac~;
+#X obj 255 137 expr~ max(min($v1 \, 1) \, -1);
+#X obj 428 197 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 304 197 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 294 167 threshold~ 0.5 100 0 100;
+#X obj 426 228 send thresholdBang;
+#X obj 255 62 loadbang;
+#X connect 1 0 7 0;
+#X connect 2 0 3 0;
+#X connect 4 0 7 0;
+#X connect 5 0 9 0;
+#X connect 6 0 5 0;
+#X connect 7 0 2 0;
+#X connect 9 0 8 0;
+#X connect 9 0 8 1;
+#X connect 9 0 12 0;
+#X connect 10 0 13 0;
+#X connect 12 0 11 0;
+#X connect 12 1 10 0;
+#X connect 14 0 6 0;
