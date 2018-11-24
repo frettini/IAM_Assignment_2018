@@ -34,7 +34,7 @@ Most of the sound is dealt with in Pure Data.
 The communicating ports are 8000 and 8001. The pure data patches are set to the same ports.
 
 To have the project up and running, you just need to have the pure data patch and unity project opne at the same time.
-To replay the game, you will have to **RESTART** the PD patch (it doesn't reboot automatically.
+To replay the game, you will have to **RESTART** the PD patch (it doesn't reboot automatically).
 
 ## Pure Data Patch
 
@@ -42,7 +42,7 @@ The patch doesn't have to be interacted with during the course of the game.
 
 It is divided into several parts:
  
-  - a mixer where all the volumes can be agjusted.
+  - a mixer where all the volumes can be adjusted.
   - the OSCManager subpatch which ensures the communication from unity to pure data.
   - the background subpatch which handles the back ground sounds.
   - the pick up object subpatch which handles the effects created every time a cube is brought back to the tile.
