@@ -3717,6 +3717,7 @@ GameObject:
   - component: {fileID: 1112223062}
   - component: {fileID: 1112223064}
   - component: {fileID: 1112223063}
+  - component: {fileID: 1112223065}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3803,7 +3804,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1112223057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68bb978b896e244e69cb32252ed8cf5b, type: 3}
   m_Name: 
@@ -3822,7 +3823,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1112223057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68bb978b896e244e69cb32252ed8cf5b, type: 3}
   m_Name: 
@@ -3841,7 +3842,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1112223057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68bb978b896e244e69cb32252ed8cf5b, type: 3}
   m_Name: 
@@ -3854,6 +3855,19 @@ MonoBehaviour:
     MemberName: red
   informOnChanged: 1
   informInterval: 0
+--- !u!114 &1112223065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112223057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb8817e5446eea4388b8451b86e1ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Transmitter: {fileID: 647040251}
+  al: {fileID: 1112223059}
 --- !u!1001 &1146419102
 Prefab:
   m_ObjectHideFlags: 0

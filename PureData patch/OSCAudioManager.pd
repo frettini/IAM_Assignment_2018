@@ -1,6 +1,6 @@
 #N canvas 260 63 1008 467 10;
 #X declare -lib mrpeach;
-#N canvas 0 154 1754 976 ennemy 0;
+#N canvas 18 7 1754 976 ennemy 0;
 #X obj 174 146 phasor~ 1;
 #X obj 173 200 *~ 44100;
 #X obj 246 183 r EnnemySample1Samples;
@@ -35,30 +35,30 @@
 #X msg 1269 263 read -resize BubblingDripping.wav EnnemySample2;
 #X obj 1307 329 s EnnemySample2Samples;
 #X obj 1269 397 s EnnemySample2Duration;
-#X obj 523 104 phasor~ 1;
-#X obj 522 158 *~ 44100;
-#X obj 523 71 expr 1/$f1;
-#X floatatom 474 98 5 0 0 0 - - -;
-#X obj 521 232 freeverb~;
-#X obj 673 237 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 529 104 phasor~ 1;
+#X obj 528 158 *~ 44100;
+#X obj 529 71 expr 1/$f1;
+#X floatatom 480 98 5 0 0 0 - - -;
+#X obj 527 232 freeverb~;
+#X obj 679 237 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 523 47 r EnnemySample2Duration;
-#X obj 595 141 r EnnemySample2Samples;
-#X obj 522 192 tabread~ EnnemySample2;
-#X floatatom 699 366 5 0 1 0 - - -;
-#X obj 676 406 * -1;
+#X obj 529 47 r EnnemySample2Duration;
+#X obj 601 141 r EnnemySample2Samples;
+#X obj 528 192 tabread~ EnnemySample2;
+#X floatatom 719 426 5 0 1 0 - - -;
+#X obj 696 466 * -1;
 #X obj 528 325 hip~ 5;
 #X floatatom 566 281 5 0 0 0 - - -;
-#X obj 686 327 lop~ 1000;
-#X floatatom 747 293 5 0 0 0 - - -;
-#X obj 475 465 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 669 387 lop~ 1000;
+#X floatatom 730 353 5 0 0 0 - - -;
+#X obj 479 515 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 619 489 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 619 541 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 530 591 +~;
-#X floatatom 768 547 5 0 0 0 - - -;
-#X floatatom 468 516 5 0 0 0 - - -;
-#X obj 669 522 *~ 0.952;
+#X floatatom 768 599 5 0 0 0 - - -;
+#X floatatom 472 566 5 0 0 0 - - -;
+#X obj 669 574 *~ 0.952;
 #X obj 866 188 phasor~ 1;
 #X obj 863 233 *~ 44100;
 #X obj 862 307 freeverb~;
@@ -73,32 +73,32 @@
 #X obj 933 483 osc~ 5;
 #X floatatom 984 449 5 0 0 0 - - -;
 #X obj 864 412 lop~ 69;
-#X floatatom 665 272 5 0 0 0 - - -;
-#X obj 525 498 *~ 0.015;
-#X obj 650 440 clip~ -0.1 0.1;
+#X floatatom 671 272 5 0 0 0 - - -;
+#X obj 529 548 *~ 0.015;
+#X obj 670 500 clip~ -0.1 0.1;
 #X floatatom 1108 344 5 0 0 0 - - -;
 #X msg 267 257 wet 1;
 #X msg 977 333 wet 7;
-#X msg 616 215 wet 3;
+#X msg 622 215 wet 3;
 #X msg 1037 293 7;
 #X obj 1039 261 loadbang;
-#X obj 692 179 loadbang;
-#X msg 690 201 3;
+#X obj 698 179 loadbang;
+#X msg 696 201 3;
 #X obj 167 704 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 173 760 +~;
-#X obj 712 703 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 527 718 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 186 873 +~;
 #X obj 173 813 +~;
-#X obj 869 707 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 859 771 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X floatatom 108 756 5 0 0 0 - - -;
-#X floatatom 687 757 5 0 0 0 - - -;
-#X floatatom 837 776 5 0 0 0 - - -;
+#X floatatom 502 772 5 0 0 0 - - -;
+#X floatatom 827 840 5 0 0 0 - - -;
 #X obj 171 729 *~ 0.07;
-#X obj 716 727 *~ 0.086;
-#X obj 873 731 *~ 1;
+#X obj 531 742 *~ 0.086;
+#X obj 863 795 *~ 1;
 #X obj 299 994 hsl 128 15 0 1 0 0 empty ENvol empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 188 943 *~ 0.07;
@@ -110,6 +110,9 @@
 #X obj 187 998 s~ ENtrack;
 #X obj 273 856 moses 30;
 #X obj 272 885 / 30;
+#X text 604 408 add distortion on the low frequency;
+#X text 458 487 seperate high and low frequencies;
+#X text 202 307 add reverb to all the samples;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 2 0 1 1;
@@ -37975,7 +37978,7 @@ here;
 #X obj 533 197 r green;
 #X obj 641 197 r blue;
 #X obj 90 140 sel 1 2 3 4;
-#X obj 90 170 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 90 170 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 193 170 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
