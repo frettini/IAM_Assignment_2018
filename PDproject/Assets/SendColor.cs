@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using extOSC;
 
-using System;
-using UnityEngine.UI;
 
 public class SendColor : MonoBehaviour {
 
